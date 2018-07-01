@@ -1,0 +1,12 @@
+// Customizer const
+
+export const THEME_COLOR_SELECTION = 'THEME_COLOR_SELECTION';
+export const THEME_COLOR_SELECTION_CUSTOMIZE = 'THEME_COLOR_SELECTION_CUSTOMIZE';
+
+export const NAV_STYLE = 'NAV_STYLE';
+export const NAV_STYLE_FIXED = 'NAV_STYLE_FIXED';
+export const NAV_STYLE_DRAWER = 'NAV_STYLE_DRAWER';
+export const NAV_STYLE_MINI = 'NAV_STYLE_MINI';
+
+
+export const TAB_SIZE = 992;

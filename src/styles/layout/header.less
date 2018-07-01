@@ -1,0 +1,119 @@
+/* Header Style */
+.ant-layout-header {
+  .box-shadow(0 0 4px fade(@black-color, 28%));
+  .flex-display(flex, row, wrap);
+  .align-items(center);
+  .justify-content(space-between);
+  line-height: 1;
+  padding: @layout-header-padding;
+  height: @layout-header-height;
+  position: relative;
+  z-index: 10;
+
+  @media screen and (max-width: @screen-md-max) {
+    padding: @layout-header-padding-res;
+  }
+}
+
+.ant-dropdown-menu-item {
+  .flex-display();
+  .align-items(center);
+}
+
+.@{class-prefix}-linebar {
+  font-size: 20px;
+}
+
+.@{class-prefix}-header-notifications {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  .flex-display(flex, row, wrap);
+  .align-items(center);
+
+  & > li {
+    font-size: 14px;
+
+    &:not(:last-child) {
+      margin-right: 42px;
+
+      @media screen and (max-width: @screen-md-max) {
+        margin-right: 20px;
+      }
+
+      @media screen and (max-width: @screen-sm-max) {
+        margin-right: 16px;
+      }
+    }
+
+    &.@{class-prefix}-notify {
+      margin-right: 22px;
+
+      @media screen and (max-width: @screen-md-max) {
+        margin-right: 16px;
+      }
+    }
+  }
+}
+
+.@{class-prefix}-popover-scroll {
+  height: 280px !important;
+  width: 300px !important;
+  margin: 0 -16px;
+
+  @media screen and (max-width: @screen-xs-max) {
+    height: 210px !important;
+    width: 250px !important;
+  }
+}
+
+.@{class-prefix}-popover-lang-scroll {
+  height: 220px !important;
+  width: 160px !important;
+  margin: 0 -16px;
+}
+
+.ant-popover-placement-bottomRight {
+  & > .ant-popover-content {
+    & > .ant-popover-arrow {
+      right: 10px;
+    }
+  }
+}
+
+.@{class-prefix}-popover-header {
+  .flex-display(flex, row, wrap);
+  .align-items(center);
+  .justify-content(space-between);
+  border-bottom: @border-style-base @border-width-base @border-color;
+  margin: 0 -16px;
+  padding: 0 16px 12px;
+}
+
+.@{class-prefix}-sub-popover {
+  list-style: none;
+  margin: 0 16px;
+  padding-left: 0;
+
+  & li {
+    padding: 20px 0 14px;
+
+    .@{class-prefix}-popover-lang-scroll & {
+      padding: 5px 0;
+    }
+
+    &:not(:last-child) {
+      border-bottom: @border-style-base @border-width-base @border-color;
+    }
+  }
+}
+
+.@{class-prefix}-user-nav {
+  & .ant-avatar.@{class-prefix}-size-50 {
+    @media screen and (max-width: @screen-md-max) {
+      height: @size-40 !important;
+      width: @size-40 !important;
+      line-height: @size-40 !important;
+    }
+  }
+}
