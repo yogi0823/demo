@@ -31,6 +31,9 @@ class Customizer extends Component {
       window.less
         .modifyVars(vars)
         .then(() => {
+          this.props.setStyleNavChange(NAV_STYLE_DRAWER);
+          this.props.setStyleNavChange(NAV_STYLE_FIXED);
+          this.forceUpdate();
         })
         .catch(error => {
           message.error(`Failed to update theme`);
