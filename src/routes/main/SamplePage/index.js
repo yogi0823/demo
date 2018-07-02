@@ -8,7 +8,7 @@ const SamplePage = () => {
         <Card>
           <h1 className="gx-mb-5">Simple Page</h1>
           <p> this is demo </p>
-          <Button type="primary">Click me!!!</Button>
+          <Button type="primary">Click me !!!</Button>
         </Card>
       </Col>
     </Row>
