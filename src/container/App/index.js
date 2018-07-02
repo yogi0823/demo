@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
-import {Route, Switch} from "react-router-dom";
+import {Redirect, Route, Switch} from "react-router-dom";
 import {LocaleProvider} from "antd";
 import {IntlProvider} from "react-intl";
 
@@ -13,7 +13,13 @@ class App extends Component {
 
 
   render() {
-    const {match, locale} = this.props;
+    const {match, location, locale} = this.props;
+
+    if (location.pathname === '/') {
+      return ( <Redirect to={'/main/samples/page'}/> );
+    }
+
+
     const currentAppLocale = AppLocale[locale.locale];
     return (
       <LocaleProvider locale={currentAppLocale.antd}>
